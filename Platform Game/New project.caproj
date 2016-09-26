@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2w3h1f7o3bwg</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground2" sid="581710900741556">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ricardo Juan Muerte\Desktop\TEMP_sky.png" />
+        </object-type>
+        <object-type name="TiledBackground" sid="580779285177274">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="407381843753137">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\forest_pack_05.png" />
+        </object-type>
+        <object-type name="Sprite4" sid="873140844759748">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="124842798529009">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256600967483645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\forest_pack_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="945310929208265">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="627964790355946">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="235061401571754">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646034376965126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="218601838109749">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Facebook" sid="832723002474656">
+            <plugin id="Facebook" />
+        </object-type>
+        <object-type name="Sprite" sid="300351923817509">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="325145381085766">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="471745068284326">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="750565009690932" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\forest_pack_71.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.960938" y="0.960938" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0390625" y="0.960938" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="583156869227532">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="440005403835121">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\forest_pack_52.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="683741786192963">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="242664409543313">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="442177828843096">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\forest_pack_56.png" />
+        </object-type>
+        <object-type name="coin" sid="907748620228179">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Value" sid="643872420165370" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911142068202513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\Ricardo Juan Muerte\Downloads\coin1.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.146341" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.146341" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.85" y="0.853659" />
+                            <point x="0.5" y="0.97561" />
+                            <point x="0.15" y="0.853659" />
+                            <point x="0" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ricardo Juan Muerte\Downloads\coin2.png">
+                        <collision-poly>
+                            <point x="0.176471" y="0.142857" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.823529" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.823529" y="0.857143" />
+                            <point x="0.5" y="0.97619" />
+                            <point x="0.176471" y="0.857143" />
+                            <point x="0.0294118" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ricardo Juan Muerte\Downloads\coin3.png">
+                        <collision-poly>
+                            <point x="0.192308" y="0.119048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.807692" y="0.119048" />
+                            <point x="0.961538" y="0.5" />
+                            <point x="0.807692" y="0.880952" />
+                            <point x="0.5" y="0.97619" />
+                            <point x="0.192308" y="0.880952" />
+                            <point x="0.0384615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\Ricardo Juan Muerte\Downloads\coin4.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0243902" />
+                            <point x="0.833333" y="0.0243902" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.833333" y="0.97561" />
+                            <point x="0.5" y="1" />
+                            <point x="0.166667" y="0.97561" />
+                            <point x="0" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192308" y="0.119048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.807692" y="0.119048" />
+                            <point x="0.961538" y="0.5" />
+                            <point x="0.807692" y="0.880952" />
+                            <point x="0.5" y="0.97619" />
+                            <point x="0.192308" y="0.880952" />
+                            <point x="0.0384615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.176471" y="0.142857" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.823529" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.823529" y="0.857143" />
+                            <point x="0.5" y="0.97619" />
+                            <point x="0.176471" y="0.857143" />
+                            <point x="0.0294118" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground5" sid="343233177433328">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ricardo Juan Muerte\Downloads\2D Platformer Forest Pack (Tio Aimar)\PNG\bg_forest_layers\bg_forest_b.png" />
+        </object-type>
+        <object-type name="LocalStorage" sid="481186070012851">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="TextBox" sid="909366346162098">
+            <plugin id="TextBox" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Facebook" uid="4">
+            <properties>
+                <app-id></app-id>
+                <app-secret></app-secret>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="9" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

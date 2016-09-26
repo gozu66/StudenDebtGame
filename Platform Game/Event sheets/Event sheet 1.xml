@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="211356580781335" static="0" type="number">0</variable>
+        <event-block sid="698899956699986">
+            <conditions>
+                <condition id="2" name="Key is down" sid="263868108971661" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="870278174977841" type="Sprite6">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875180672876205">
+            <conditions>
+                <condition id="2" name="Key is down" sid="513801100403025" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="921834155127608" type="Sprite6">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550907917793732">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="860388423709404" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="922707678215354" type="Sprite6">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="510238202838107">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="284022306679707" type="Sprite6">
+                    <param id="0" name="Object">coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="752200419196007" type="coin" />
+                <action id="-10" name="Add to" sid="260244407523834" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">coin.Value</param>
+                </action>
+                <action id="0" name="Set text" sid="502901151788829" type="TextBox">
+                    <param id="0" name="Text">&quot;Score : &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
