@@ -10,16 +10,20 @@
     <unique-id>2w3h1f7o3bwg</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Twitter" version="1">Twitter</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -238,6 +242,60 @@
         <object-type name="TextBox" sid="909366346162098">
             <plugin id="TextBox" />
         </object-type>
+        <object-type name="Sprite2" sid="956794473171041">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="746738683268524">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="608593423925706">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="191501123156126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Screen_block_left" sid="342306878519052">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="100265618551721">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="712931226810033">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="189054077287963" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="545559490475394">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367170124557978" speed="5">
+                    <frame duration="1" hotspotX="-0.004" hotspotY="-0.008" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Twitter" sid="430546996840639">
+            <plugin id="Twitter" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="661254329217403">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Browser" sid="453142115288519">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Mouse" sid="972299825313642">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -255,6 +313,8 @@
             </properties>
         </global-instance>
         <global-instance type="LocalStorage" uid="9" />
+        <global-instance type="Browser" uid="17" />
+        <global-instance type="Mouse" uid="18" />
     </global-instances>
     <sounds-folder />
     <music-folder />
